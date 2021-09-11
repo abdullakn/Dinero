@@ -3,13 +3,15 @@ import requests
 import json
 from datetime import date, timedelta
 import datetime
+from decouple import config
 
 # Create your views here.
 
 def tracking_error(request):
+    key =config('key')
         
     params = {
-    'access_key': 'd2f6235ac39c5e90926f6c12ac5d9209'
+    'access_key': key
     }
 
     #API Call
