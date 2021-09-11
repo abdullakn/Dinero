@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinero</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  
+</head>
+
+<body>
+    <section class="details-card">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                
+                </div>
+                <div class="col-md-4">
+                    <div class="card-content">
+                        <div class="card-img">
+                            <img src="{% static 'sbi.png' %}" alt="">
+                            
+                        </div>
+                        <div class="card-desc">
+                             -- Mar-10 to Latest --
+                            <h3>Tracking Error of  SBI – ETF Nifty Next 50</h3>
+                            <p>Tracking Error : {{tracking_error}}</p>
+                                 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+</body>
+</html>
